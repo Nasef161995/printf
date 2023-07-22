@@ -15,12 +15,12 @@ for (i = 0; format[i]; i++)
 {
 if (format[i] != '%')
 {
-len += print_char(format[i]);
+len += _my_putchar(format[i]);
 continue;
 }
 if (i++ == strlen(format) - 1)
 return (-1);
-len += checker(format[i], args);
+len += _check(format[i], args);
 }
 va_end(args);
 return (len);

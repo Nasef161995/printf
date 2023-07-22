@@ -76,7 +76,7 @@ switch (c)
 			len += _num_length(num);
 			break;
 		case 'b':
-			len += print_binary(va_arg(args, unsigned int));
+			len += _myprint_binary(va_arg(args, unsigned int));
 			break;
 		case '%':
 			len += _my_putchar('%');
