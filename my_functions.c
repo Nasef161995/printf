@@ -81,6 +81,15 @@ switch (c)
 		case '%':
 			len += _my_putchar('%');
 			break;
+		case 'o':
+			len += _myprintf_oct(va_arg(args, unsigned int));
+			break;
+		case 'x':
+			len += _print_hex(va_arg(args, unsigned int));
+			break;
+		case 'X':
+			len += _myprintf_HEX(va_arg(args, unsigned int));
+			break;
 		default:
 			len += _my_putchar('%');
 			len += _my_putchar(c);
