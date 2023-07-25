@@ -81,9 +81,6 @@ switch (c)
 		case '%':
 			len += _my_putchar('%');
 			break;
-		case 'r':
-			len += int _printf_srev(va_list args);
-			break;
 		default:
 			len += _my_putchar('%');
 			len += _my_putchar(c);
