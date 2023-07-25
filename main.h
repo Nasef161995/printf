@@ -16,6 +16,6 @@ void _my_putint(int n);
 int _num_length(int n);
 int _check(char c, va_list args);
 int _myprint_binary(unsigned int n);
-
+int _printf_srev(va_list args);
 
 #endif
